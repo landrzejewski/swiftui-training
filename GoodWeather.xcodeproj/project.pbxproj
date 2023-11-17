@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		B232E5702A2889D100F8AB9C /* URLSession+ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = B232E56F2A2889D100F8AB9C /* URLSession+ext.swift */; };
-		B232E5722A289F5300F8AB9C /* FakeForecastProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = B232E5712A289F5300F8AB9C /* FakeForecastProvider.swift */; };
 		B232E5742A289F6200F8AB9C /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = B232E5732A289F6200F8AB9C /* data.json */; };
 		B232E5762A28A29800F8AB9C /* ForecastDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B232E5752A28A29800F8AB9C /* ForecastDetailsView.swift */; };
 		B232E57A2A28A37A00F8AB9C /* ProfieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B232E5792A28A37A00F8AB9C /* ProfieView.swift */; };
@@ -112,7 +111,6 @@
 
 /* Begin PBXFileReference section */
 		B232E56F2A2889D100F8AB9C /* URLSession+ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "URLSession+ext.swift"; sourceTree = "<group>"; };
-		B232E5712A289F5300F8AB9C /* FakeForecastProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FakeForecastProvider.swift; sourceTree = "<group>"; };
 		B232E5732A289F6200F8AB9C /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
 		B232E5752A28A29800F8AB9C /* ForecastDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastDetailsView.swift; sourceTree = "<group>"; };
 		B232E5792A28A37A00F8AB9C /* ProfieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfieView.swift; sourceTree = "<group>"; };
@@ -457,7 +455,6 @@
 			children = (
 				B2520A782A262391009198B3 /* View */,
 				B2520A792A2623A1009198B3 /* ForecastProvider */,
-				B232E5712A289F5300F8AB9C /* FakeForecastProvider.swift */,
 				B2520AAD2A274835009198B3 /* LocationProvider */,
 				B2520AB62A2757C7009198B3 /* Persistence */,
 			);
@@ -717,7 +714,6 @@
 				B2520AAA2A273154009198B3 /* ForecastOpenWeatherMapper.swift in Sources */,
 				B2520AA32A264043009198B3 /* ForecastRouterView.swift in Sources */,
 				B2520A6F2A260CBE009198B3 /* DayForecastView.swift in Sources */,
-				B232E5722A289F5300F8AB9C /* FakeForecastProvider.swift in Sources */,
 				B232E5D82A29EEAC00F8AB9C /* Template.swift in Sources */,
 				B2520AB12A2749CE009198B3 /* FakeLocationProvider.swift in Sources */,
 				B232E5A72A28C40100F8AB9C /* FoodView.swift in Sources */,

@@ -8,9 +8,73 @@
 import SwiftUI
 
 struct Fruits: View {
+    
+    @Namespace
+    var namespace
+    @State
+    private var selectedItem: Item?
+    private var items = FruitsData.getFruits()
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            List(items) { item in
+                HStack {
+                    if item.id != selectedItem?.id {
+                        Image(item.imageName)
+                            .resizable()
+                            .aspectRatio(contentMode: .fit)
+                            .frame(width: 50, height: 36)
+                    } else {
+                        Color.clear
+                            .frame(width: 50, height: 36)
+                    }
+                    Text(item.name)
+                        .font(.title)
+                    Spacer()
+                }
+                .padding()
+                .matchedGeometryEffect(id: item.id, in: namespace)
+                .onTapGesture {
+                    withAnimation(.spring(response: 0.35, dampingFraction: 0.6)) {
+                        selectedItem = item
+                    }
+                }
+            }
+            .listStyle(.plain)
+            .disabled(selectedItem != nil)
+            .blur(radius: selectedItem != nil ? 3 : 0)
+        }
+        .overlay {
+            if let selectedItem {
+                VStack(spacing: 40) {
+                    Image(selectedItem.imageName)
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                        .frame(width: 300)
+                        .matchedGeometryEffect(id: selectedItem.id, in: namespace)
+                    Button(action: {
+                        withAnimation(.easeInOut(duration: 0.6)) {
+                            self.selectedItem = nil
+                        }
+                    }) {
+                        Text("Close")
+                            .foregroundColor(.black)
+                            .padding()
+                            .background(Capsule().fill(.white))
+                    }
+                }
+                .padding()
+                .background(RoundedRectangle(cornerRadius: 25)
+                    .fill(Color.green)
+                    .shadow(radius: 10)
+                )
+               
+   
+                
+            }
+        }
     }
+    
 }
 
 #Preview {
@@ -18,7 +82,7 @@ struct Fruits: View {
 }
 
 
-class Data {
+class FruitsData {
     static func getFruits() -> [Item] {
         return [
             Item(name: "Avocado", imageName: "Avocado"),
