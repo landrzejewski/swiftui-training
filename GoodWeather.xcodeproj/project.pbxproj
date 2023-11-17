@@ -90,6 +90,7 @@
 		B2520AC62A276EC6009198B3 /* SqlForecastRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2520AC52A276EC6009198B3 /* SqlForecastRepository.swift */; };
 		B2520ACB2A279117009198B3 /* UserProperty.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2520AC92A279117009198B3 /* UserProperty.swift */; };
 		B2520ACC2A279117009198B3 /* Capitalized.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2520ACA2A279117009198B3 /* Capitalized.swift */; };
+		B29FD6312B075CDA00ECA806 /* Fruits.swift in Sources */ = {isa = PBXBuildFile; fileRef = B29FD6302B075CDA00ECA806 /* Fruits.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -196,6 +197,7 @@
 		B2520AC52A276EC6009198B3 /* SqlForecastRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SqlForecastRepository.swift; sourceTree = "<group>"; };
 		B2520AC92A279117009198B3 /* UserProperty.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserProperty.swift; sourceTree = "<group>"; };
 		B2520ACA2A279117009198B3 /* Capitalized.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Capitalized.swift; sourceTree = "<group>"; };
+		B29FD6302B075CDA00ECA806 /* Fruits.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fruits.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -314,6 +316,7 @@
 				B232E5A02A28BFB600F8AB9C /* PlaceholderView.swift */,
 				B232E5A22A28C1EF00F8AB9C /* ActivityIndicatorView.swift */,
 				B232E5A42A28C2A800F8AB9C /* LoadingView.swift */,
+				B29FD6302B075CDA00ECA806 /* Fruits.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -665,6 +668,7 @@
 			files = (
 				B2520AB52A27507B009198B3 /* CoreLocationProvider.swift in Sources */,
 				B2520ACB2A279117009198B3 /* UserProperty.swift in Sources */,
+				B29FD6312B075CDA00ECA806 /* Fruits.swift in Sources */,
 				B2520AB32A274F7E009198B3 /* CityDto.swift in Sources */,
 				B232E5A52A28C2A800F8AB9C /* LoadingView.swift in Sources */,
 				B232E5C62A29D33D00F8AB9C /* BasicAnimations.swift in Sources */,
